@@ -1,0 +1,7 @@
+<svg id="Camera" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Rectangle_4" data-name="Rectangle 4" fill="none" stroke="#14142b" stroke-width="1" opacity="0">
+    <rect width="24" height="24" stroke="none"/>
+    <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+  </g>
+  <path id="Read_Book" data-name="Read Book" d="M12,4.2V21M12,4.2A15.853,15.853,0,0,0,6.5,3a14.905,14.905,0,0,0-4.583.853A1.383,1.383,0,0,0,1,5.182V18.709a1.716,1.716,0,0,0,2.171,1.566A13.429,13.429,0,0,1,6.5,19.8,15.853,15.853,0,0,1,12,21M12,4.2A15.853,15.853,0,0,1,17.5,3a14.9,14.9,0,0,1,4.583.853A1.383,1.383,0,0,1,23,5.182V18.709a1.716,1.716,0,0,1-2.171,1.566A13.429,13.429,0,0,0,17.5,19.8,15.853,15.853,0,0,0,12,21" fill="none" stroke="#14142b" stroke-width="2"/>
+</svg>
