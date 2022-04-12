@@ -13,47 +13,75 @@ const Header = ({onClick, onClose}: Props) => {
     const location = useLocation();
     const [show, setShow] = useState(false)
     return (
-
         <>
-            <header className={'header backgroundMain  paddingTop20 paddingBottom20'}>
-                <div className={'displayFlex alignItems justifySpaceBetween paddingLeft100 paddingRight100'}>
-                    <div className={' displayFlex alignItems paddingRight15'}>
-                        <Link to={'/'}>
-                            <div className={'fontBlack textLight font28 marginRight50'}>
-                                Хөдөө ах ахуйг дэмжих сан
+            <header className={'header'}>
+                <div className={'top'}>
+                    <div className={'container'}>
+                        <div className={'subTop displayFlex alignItems justifySpaceBetween'}>
+                            <div style={{display: "flex"}}>
+                                <div className={'item'}>
+                                    <img width={22} height={22} src={'/img/icon/phone.png'} style={{marginRight: 15}}/>
+                                    <p className={'none'}>+976 98115854</p>
+                                </div>
+                                <div className={'item'}>
+                                    <img width={22} height={22} src={'/img/icon/e-mail.png'} style={{marginRight: 15}}/>
+                                    <p className={'none'}>info@muls.edu.mn</p>
+                                </div>
+                                <div className={'item'}>
+                                    <img width={22} height={22} src={'/img/icon/location.png'} style={{marginRight: 15}}/>
+                                    <p className={'none'}>ЗАЙСАН, ХААИС, ИТС</p>
+                                </div>
                             </div>
-
-                        </Link>
-                        <div className={'displayFlex alignItems font14 fontMedium'}>
-                            <Link
-                                className={`${location.pathname === "/" ? "textActive" : "textLight"} colorHover paddingRight20`}
-                                to={'/'}>
-                                Нүүр хуудас
-                            </Link>
-                            <Link
-                                className={`${location.pathname === "/course" ? "textActive" : "textLight"} colorHover paddingLeft20 paddingRight20`}
-                                to={'/course'}>
-                                Сургалт
-                            </Link>
-                            <Link
-                                className={`${location.pathname === "/premium" ? "textActive" : "textLight"} colorHover paddingLeft20 paddingRight20`}
-                                to={'/premium'}>
-                                Эрх авах
-                            </Link>
+                            <div style={{display: 'flex'}}>
+                                <div className={'item'}>
+                                    <img width={22} height={22} src={'/img/icon/facebook.png'} style={{marginRight: 15}}/>
+                                </div>
+                                <div className={'item'}>
+                                    <img width={22} height={22} src={'/img/icon/instagram.png'} style={{marginRight: 15}}/>
+                                </div>
+                                <div className={'item'}>
+                                    <img width={22} height={22} src={'/img/icon/twitter.png'} style={{marginRight: 15}}/>
+                                </div>
+                                <div className={'item'}>
+                                    <img width={22} height={22} src={'/img/icon/youtube.png'} style={{marginRight: 15}}/>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-
-                    <div className={'displayFlex alignItems'}>
-                        <Link className={'displayFlex alignItems marginRight30'} to={'/login'}>
-                            <div className={'fontMedium font14 textLight marginLeft15 colorHover'}>
-                                Нэвтрэх
+                </div>
+                <div className={'bottom '}>
+                    <div className={'container'}>
+                        <div className={'displayFlex alignItems justifySpaceBetween'}>
+                            <div className={'left displayFlex alignItems paddingRight15'}>
+                                <img width={149} height={47} style={{marginRight: 30}} src={'img/yam.png'}/>
+                                <img width={47} height={47} style={{marginRight: 40}} src={'img/haaisLogo.png'}/>
+                                <img width={145} height={47} src={'img/khaadsLogo.png'}/>
                             </div>
-                        </Link>
-                        <Link className={'register'} to={'/register'}>
-                            <CustomButton title={'Бүртгүүлэх'} style={"main"} loading={false}
-                                          reload={(e: any) => console.log(e)}/>
-                        </Link>
+                            <div className={'right displayFlex alignItems'}>
+                                <div className={'item displayFlex alignItems font14 fontMedium'}>
+                                    <Link
+                                        className={`${location.pathname === "/" ? "textActive" : "textMain"} pointer colorHover paddingRight20`}
+                                        to={'/'}>
+                                        Нүүр хуудас
+                                    </Link>
+                                    <Link
+                                        className={`${location.pathname === "/news" ? "textActive" : "textMain"} pointer colorHover paddingLeft20 paddingRight20`}
+                                        to={'/news'}>
+                                        Мэдээ мэдээлэл
+                                    </Link>
+                                    <Link
+                                        className={`${location.pathname === "/tech" ? "textActive" : "textMain"} pointer colorHover paddingLeft20 paddingRight20`}
+                                        to={'/tech'}>
+                                        Техникийн танилцуулга
+                                    </Link>
+                                </div>
+                                <Link className={'login displayFlex alignItems marginRight30'} to={'/login'}>
+                                    <div className={'fontMedium font14 colorHover'} style={{color: '#fff'}}>
+                                        Нэвтрэх
+                                    </div>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>
