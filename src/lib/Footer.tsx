@@ -5,7 +5,7 @@ import {Col, Row} from "antd";
 function Footer() {
     return (
         <footer className={'footer backgroundMain paddingTop30 paddingBottom50'}>
-            <div className={'paddingRight100 paddingLeft100'}>
+            <div className={'container'}>
                 <Row>
                     <Col xxl={8} xl={8} xs={8}>
                         <div className={'desc'}>Бидний тухай</div>
@@ -28,7 +28,6 @@ function Footer() {
                             <div>
                                 <h3>
                                     Холбоо барих
-                                    <span/>
                                 </h3>
                             </div>
                             <div>

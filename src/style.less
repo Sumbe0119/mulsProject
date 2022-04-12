@@ -122,8 +122,9 @@ button, html [type="button"] {
   .slideHeight {
     height: 425px;
   }
-  .container{
-    .box{
+
+  .container {
+    .box {
       height: 700px;
       background-color: white;
       border-radius: 10px;
@@ -146,6 +147,7 @@ footer {
     h3 {
       color: #ffffff;
       position: relative;
+      margin-bottom: 35px;
 
       span {
         width: 100px;
@@ -158,16 +160,14 @@ footer {
     }
 
     p {
-
+      margin: 0px;
+      padding: 0px;
     }
   }
 
   .desc {
     font-family: "Montserrat Medium";
     font-size: 18px;
-    border: 0px;
-    border-bottom-width: 1px;
-    border-style: solid;
     padding-bottom: 15px;
     margin-right: 100px;
     margin-left: 100px;
@@ -201,3 +201,196 @@ footer {
 }
 
 /**----------------------------------------------Footer End--------------------------------------------------**/
+
+
+/**----------------------------------------------Login--------------------------------------------------**/
+.form {
+  height: 100%;
+
+  .content {
+    max-width: 525px;
+    width: 100%;
+
+    .ant-form label {
+      display: flex;
+      align-items: center;
+    }
+
+    .ant-checkbox-inner {
+      width: 22px;
+      height: 22px;
+    }
+
+    .ant-checkbox + span {
+      padding-top: 6px;
+    }
+
+    .ant-form-item-control-input-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: #ffb822;
+      border-color: #ffb822;
+    }
+
+    .ant-input-affix-wrapper {
+      padding: 12px 20px;
+      border-radius: 3px;
+
+      .loginCo {
+        -webkit-mask-image: url('./img/loginCo.png');
+        background-size: cover;
+        background-color: #212121;
+      }
+
+      .passwordCo {
+        -webkit-mask-image: url('./img/passwordCo.png');
+        background-size: cover;
+        background-color: #212121;
+      }
+
+      .phoneCo {
+        -webkit-mask-image: url('./img/phoneCo.png');
+        background-size: cover;
+        background-color: #212121;
+      }
+
+      .ant-input {
+        margin-left: 10px;
+      }
+    }
+
+    .ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner {
+      border-color: #ffb822;
+    }
+
+    .ant-checkbox-checked::after {
+      border-color: #ffb822;
+    }
+
+    .ant-checkbox-inner::after {
+      left: 6px;
+    }
+
+    .ant-checkbox-checked .ant-checkbox-inner::after {
+      border-width: 1px;
+    }
+  }
+}
+
+.loginPage {
+  position: fixed;
+  width: 100%;
+
+  .loginImage {
+    height: 100vh;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      background-color: rgba(0, 0, 0, .45);
+      height: 100%;
+    }
+
+    .text {
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      z-index: 11;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .title {
+      color: #ffffff;
+      line-height: 44px;
+
+      span {
+        width: 85px;
+        height: 3px;
+        background-color: #ffb822;
+        display: block;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .description {
+      max-width: 525px;
+
+      p {
+        color: #ffffff;
+        margin: 0;
+      }
+
+      a {
+        font-size: 16px;
+        color: #ffffff;
+        display: inline-block;
+        margin-top: 35px;
+        background-color: rgba(255, 255, 255, .01);
+        border: 1px solid rgba(255, 255, 255, .75);
+        border-radius: 3px;
+        padding: 12px 25px 12px 35px;
+
+        .icon {
+          margin-left: 10px;
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .icons {
+    background-color: #000;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: -40px;
+    padding: 5px;
+  }
+
+  .loginBtn {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+    &:hover {
+      background-color: #fdbe40;
+      color: white;
+    }
+  }
+
+  .registerBtn {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #005332;
+
+    &:hover {
+      background-color: #1d8f61;
+      color: white;
+    }
+  }
+
+}
+
+/**----------------------------------------------Login End--------------------------------------------------**/
+
+/**----------------------------------------------Tech--------------------------------------------------**/
+
+.tech {
+  .box {
+
+  }
+}
+
+/**----------------------------------------------Tech End--------------------------------------------------**/
