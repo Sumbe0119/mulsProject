@@ -11,7 +11,7 @@ interface Props {
 
 const Header = ({onClick, onClose}: Props) => {
     const location = useLocation();
-    const [show, setShow] = useState(false)
+    const [user, setUser] = useState(false)
     return (
         <>
             <header className={'header'}>
@@ -28,22 +28,27 @@ const Header = ({onClick, onClose}: Props) => {
                                     <p className={'none'}>info@muls.edu.mn</p>
                                 </div>
                                 <div className={'item'}>
-                                    <img width={22} height={22} src={'/img/icon/location.png'} style={{marginRight: 15}}/>
+                                    <img width={22} height={22} src={'/img/icon/location.png'}
+                                         style={{marginRight: 15}}/>
                                     <p className={'none'}>ЗАЙСАН, ХААИС, ИТС</p>
                                 </div>
                             </div>
                             <div style={{display: 'flex'}}>
                                 <div className={'item'}>
-                                    <img width={22} height={22} src={'/img/icon/facebook.png'} style={{marginRight: 15}}/>
+                                    <img width={22} height={22} src={'/img/icon/facebook.png'}
+                                         style={{marginRight: 15}}/>
                                 </div>
                                 <div className={'item'}>
-                                    <img width={22} height={22} src={'/img/icon/instagram.png'} style={{marginRight: 15}}/>
+                                    <img width={22} height={22} src={'/img/icon/instagram.png'}
+                                         style={{marginRight: 15}}/>
                                 </div>
                                 <div className={'item'}>
-                                    <img width={22} height={22} src={'/img/icon/twitter.png'} style={{marginRight: 15}}/>
+                                    <img width={22} height={22} src={'/img/icon/twitter.png'}
+                                         style={{marginRight: 15}}/>
                                 </div>
                                 <div className={'item'}>
-                                    <img width={22} height={22} src={'/img/icon/youtube.png'} style={{marginRight: 15}}/>
+                                    <img width={22} height={22} src={'/img/icon/youtube.png'}
+                                         style={{marginRight: 15}}/>
                                 </div>
                             </div>
                         </div>
@@ -75,11 +80,21 @@ const Header = ({onClick, onClose}: Props) => {
                                         Техникийн танилцуулга
                                     </Link>
                                 </div>
-                                <Link className={'login displayFlex alignItems marginRight30'} to={'/login'}>
-                                    <div className={'fontMedium font14 colorHover'} style={{color: '#fff'}}>
-                                        Нэвтрэх
-                                    </div>
-                                </Link>
+                                {
+                                    !user ? (
+                                        <Link to={'/profile'} className={'profile'}>
+                                            <img width={22} height={22}  src={'img/icon/defaultUser.png'}/>
+                                        </Link>
+
+                                    ) : (
+                                        <Link className={'login displayFlex alignItems marginRight30'} to={'/login'}>
+                                            <div className={'fontMedium font14 colorHover '} style={{color: '#fff'}}>
+                                                Нэвтрэх
+                                            </div>
+                                        </Link>
+                                    )
+                                }
+
                             </div>
                         </div>
                     </div>

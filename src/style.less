@@ -63,6 +63,18 @@ button, html [type="button"] {
         background-color: #005332;
         border-radius: 40px;
       }
+
+      .profile {
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        background-color: #E7E7E7;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -389,8 +401,159 @@ footer {
 
 .tech {
   .box {
+    cursor: pointer;
+    padding-bottom: 10px;
 
+    &:hover {
+      background-color: #fff;
+      border-radius: 10px;
+      padding-bottom: 10px;
+    }
   }
 }
 
 /**----------------------------------------------Tech End--------------------------------------------------**/
+/**----------------------------------------------Single --------------------------------------------------**/
+
+.single {
+  .container {
+    .left {
+    }
+
+    .right {
+      .middle {
+        padding-bottom: 10px;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-left-width: 0px;
+        border-bottom-width: 1px;
+        border-style: dashed;
+        border-color: rgba(0, 0, 0, 0.1);
+        padding-top: 10px;
+
+        h2 {
+          margin: 0px
+        }
+
+        ul {
+          margin-top: 10px;
+
+          li {
+            list-style: disc;
+          }
+        }
+
+        .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+          color: #005332;
+        }
+      }
+
+      :first-child {
+        padding-top: 0px;
+
+      }
+    }
+  }
+}
+
+/**----------------------------------------------Single End--------------------------------------------------**/
+
+/**----------------------------------------------Profile--------------------------------------------------**/
+
+.profile {
+  .container {
+    .left {
+      background-color: white;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      height: 70vh;
+      border-radius: 10px;
+      display: block;
+      align-items: center;
+
+      .top {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .user {
+          margin-top: 30px;
+          margin-bottom: 30px;
+          height: 100px;
+          width: 100px;
+          border-radius: 50px;
+          background-color: #363636;
+        }
+
+      }
+
+      .item {
+        margin-left: 30px;
+      }
+    }
+
+    .right {
+      margin-top: 50px;
+      margin-bottom: 50px;
+
+
+      .top {
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .boxActive {
+          height: 50px;
+          padding: 0px 20px 0px 20px;
+          background-color: #005332;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          color: #fff;
+          box-shadow: rgb(0 0 0 / 16%) 0px 0px 4px 0px;
+        }
+        .box {
+          height: 50px;
+          padding: 0px 20px 0px 20px;
+          background-color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          color: #000;
+          background-color: white;
+          box-shadow: rgb(0 0 0 / 16%) 0px 0px 4px 0px;
+        }
+
+        :hover {
+          background-color: #005332;
+          color: #ffff;
+        }
+
+        :last-child {
+          margin-right: 0px;
+        }
+      }
+
+      .bottom {
+        background-color: white;
+        border-radius: 10px;
+        height: 61.5vh;
+        margin-top: 30px;
+        padding: 20px 20px 20px 20px;
+      }
+    }
+  }
+}
+
+.active {
+  color: red;
+}
+
+/**----------------------------------------------Profile End--------------------------------------------------**/

@@ -1,6 +1,7 @@
 import React from 'react'
 import ViewContainer from "../lib/ViewContainer";
 import {Col, Row} from "antd";
+import {Link} from "react-router-dom";
 
 const Tech = () => {
     return (
@@ -16,12 +17,12 @@ const Tech = () => {
                         </div>
                     </div>
                     <div className={'marginBottom50'}>
-                        <Row gutter={30}>
+                        <Row gutter={20}>
                             {
                                 [1, 2, 3, 4, 6, 7].map((item: any, index: number) => {
                                     return (
-                                        <Col xxl={4} xl={4} lg={4} md={4}>
-                                            <div key={index} className={'box'}>
+                                        <Col xxl={4} xl={4} lg={6} md={12}>
+                                            <Link to={'/single'} key={index} className={'box'}>
                                                 <div className={'slideHeight coverBackgroundSize coverBackgroundPosition '}
                                                      style={{
                                                          backgroundImage: `url('/img/tractor.jpg')`,
@@ -32,7 +33,7 @@ const Tech = () => {
                                                     <p className={'none font16 textMain fontMedium textCenter marginTop15 marginBottom15'}>
                                                         Хүнд даацын трактор</p>
                                                 </div>
-                                            </div>
+                                            </Link>
                                         </Col>
                                     )
                                 })
@@ -47,12 +48,12 @@ const Tech = () => {
                                  style={{WebkitMaskImage: `url('/img/icon/more.png')`}}/>
                         </div>
                     </div>
-                    <Row gutter={30}>
+                    <Row gutter={20}>
                         {
                             [1, 2, 3, 4, 6, 7].map((item: any, index: number) => {
                                 return (
-                                    <Col xxl={4} xl={4} lg={4} md={4}>
-                                        <div key={index} className={'box'}>
+                                    <Col xxl={4} xl={4} lg={6} md={12}>
+                                        <Link to={'/single'} key={index} className={'box'}>
                                             <div className={'slideHeight coverBackgroundSize coverBackgroundPosition '}
                                                  style={{
                                                      backgroundImage: `url('/img/zvtgvvr.jpg')`,
@@ -63,7 +64,7 @@ const Tech = () => {
                                                 <p className={'none font16 textMain fontMedium textCenter marginTop15 marginBottom15'}>
                                                     Хүнд даацын трактор</p>
                                             </div>
-                                        </div>
+                                        </Link>
                                     </Col>
                                 )
                             })
