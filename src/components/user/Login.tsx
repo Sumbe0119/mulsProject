@@ -86,7 +86,6 @@ const Login = () => {
                                         <Link to={'/register'}>
                                             <Button className={'registerBtn'}>Бүртгүүлэх</Button>
                                         </Link>
-
                                     </div>
                                 </Form>
                             </div>

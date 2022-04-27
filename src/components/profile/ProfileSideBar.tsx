@@ -18,14 +18,14 @@ const ProfileSideBar = () => {
                     <Link to={'/registration'}>
                         <p className={`text ${location.pathname === "/registration" ? "active" : ""}`}>Бүртгэл</p>
                     </Link>
-                    <Link to={'/registration'}>
-                        <p className={`text ${location.pathname === "/a" ? "active" : ""}`}>Техникийн байдал</p>
+                    <Link to={'/techAbout'}>
+                        <p className={`text ${location.pathname === "/techAbout" ? "active" : ""}`}>Техникийн байдал</p>
                     </Link>
-                    <Link to={'/registration'}>
-                        <p className={`text ${location.pathname === "/a" ? "active" : ""}`}>Тайлан</p>
+                    <Link to={'/report'}>
+                        <p className={`text ${location.pathname === "/report" ? "active" : ""}`}>Тайлан</p>
                     </Link>
-                    <Link to={'/registration'}>
-                        <p className={`text ${location.pathname === "/a" ? "active" : ""}`}>Санал хүсэлт</p>
+                    <Link to={'/feedback'}>
+                        <p className={`text ${location.pathname === "/feedback" ? "active" : ""}`}>Санал хүсэлт</p>
                     </Link>
                 </div>
             </div>

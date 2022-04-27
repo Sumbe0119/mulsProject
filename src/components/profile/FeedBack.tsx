@@ -6,7 +6,7 @@ import ProfileSideBar from "./ProfileSideBar";
 const type = 'Хувийн мэдээлэл' || 'Нууц үг солих' || 'Цахим хаяг'
 
 
-const Profile = () => {
+const FeedBack = () => {
     const [tab, setTab] = useState(type)
     return (
         <ViewContainer loading={false} code={200}>
@@ -19,23 +19,7 @@ const Profile = () => {
                         <Col xxl={18} xl={18} lg={18} md={24}>
                             <div className={'right'}>
                                 <div className={'bottom'}>
-
-                                    {
-                                        tab === 'Хувийн мэдээлэл' ? (
-                                            <div>Бүртгэл</div>
-                                        ):null
-                                    }
-                                    {
-                                        tab === 'Нууц үг солих' ? (
-                                            <div>Нууц үг солих</div>
-                                        ):null
-                                    }
-                                    {
-                                        tab === 'Цахим хаяг' ? (
-                                            <div>Цахим хаяг</div>
-                                        ):null
-                                    }
-
+                                    <div>Санал хүсэлт</div>
                                 </div>
                             </div>
                         </Col>
@@ -45,4 +29,4 @@ const Profile = () => {
         </ViewContainer>
     )
 }
-export default Profile
+export default FeedBack

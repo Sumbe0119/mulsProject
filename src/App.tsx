@@ -8,6 +8,9 @@ import Register from "./components/user/Register";
 import Single from "./components/Single";
 import Profile from "./components/profile/Profile";
 import Registration from "./components/profile/Registration";
+import TechAbout from "./components/profile/TechAbout";
+import Report from "./components/profile/Report";
+import FeedBack from "./components/profile/FeedBack";
 
 
 
@@ -22,6 +25,9 @@ const App = () => {
             <Route path="/single" element={<Single/>}/>
             <Route path="/profile" element={<Profile/>}/>
             <Route path="/registration" element={<Registration/>}/>
+            <Route path="/techAbout" element={<TechAbout/>}/>
+            <Route path="/report" element={<Report/>}/>
+            <Route path="/feedback" element={<FeedBack/>}/>
         </Routes>
     );
 }

@@ -6,7 +6,7 @@ import ProfileSideBar from "./ProfileSideBar";
 const type = 'Хувийн мэдээлэл' || 'Нууц үг солих' || 'Цахим хаяг'
 
 
-const Profile = () => {
+const TechAbout = () => {
     const [tab, setTab] = useState(type)
     return (
         <ViewContainer loading={false} code={200}>
@@ -22,7 +22,7 @@ const Profile = () => {
 
                                     {
                                         tab === 'Хувийн мэдээлэл' ? (
-                                            <div>Бүртгэл</div>
+                                            <div>Техникийн байдал</div>
                                         ):null
                                     }
                                     {
@@ -45,4 +45,4 @@ const Profile = () => {
         </ViewContainer>
     )
 }
-export default Profile
+export default TechAbout
