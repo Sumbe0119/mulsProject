@@ -45,7 +45,8 @@ const News = () => {
                                         unde omnis laborum, vero tenetur nesciunt recusandae! Perferendis vitae quos
                                         iure laborum distinctio pariatur, totam expedita, suscipit ut placeat odio
                                         ratione! Officia facere nesciunt possimus deserunt velit nisi aut. At laudantium
-                                        non, similique ad aspernatur illo in doloremque nihil odit quisquam, itaque eprehenderit laudantium harum dolore magnam possimus sapiente
+                                        non, similique ad aspernatur illo in doloremque nihil odit quisquam, itaque
+                                        eprehenderit laudantium harum dolore magnam possimus sapiente
                                         nesciunt porro magni, provident corporis est pariatur. Nostrum quisquam
                                         voluptatibus fugit sapiente ut. Neque illum tempora non harum voluptatibus et
                                         molestias voluptates nulla pariatur? Voluptatibus, molestias repudiandae
@@ -60,7 +61,42 @@ const News = () => {
                             </div>
                         </Col>
                         <Col xxl={10} xl={10} lg={10} md={10}>
-                            <div className={'box'}></div>
+                            <div className={'box'}>
+                                <div className={'right'}>
+                                    <h2>Сүүлд нэмэгдсэн зар</h2>
+                                    {
+                                        [1,2,3,4].map((item:any, index: number)=>{
+                                            return(
+                                                <div style={{
+                                                    display: "flex",
+                                                    justifyContent: 'space-between',
+                                                    alignContent: 'center',
+                                                    border: 0,
+                                                    borderBottomWidth: 1,
+                                                    borderBottomColor: 'rgba(0,0,0,.3)',
+                                                    borderBottomStyle: 'solid',
+                                                    paddingBottom: 15,
+                                                    marginBottom: 15
+                                                }}>
+                                                    <div className={'coverBackgroundSize coverBackgroundPosition '}
+                                                         style={{
+                                                             backgroundImage: `url('/img/boxImage.jpg')`,
+                                                             height: 80,
+                                                             width: 100,
+                                                             borderRadius: 5,
+                                                             marginRight: 20
+                                                         }}/>
+                                                    <div style={{width: '100%'}}>ias voluptates nulla pariatur? Voluptatibus, molestias repudiandae
+                                                        provident tempore repellat architecto itaque assumenda iste optio,
+                                                        consequuntur
+                                                    </div>
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div>
+
+                            </div>
                         </Col>
                     </Row>
                 </div>
