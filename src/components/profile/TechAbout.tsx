@@ -19,23 +19,43 @@ const TechAbout = () => {
                         <Col xxl={18} xl={18} lg={18} md={24}>
                             <div className={'right'}>
                                 <div className={'bottom'}>
+                                    <div className={'registration'}>
+                                        <h2>Зүтгэх хүчний машин</h2>
+                                        <Row>
+                                            <Col xxl={8} xl={8} lg={8} md={8}>
+                                                <div className={'myTableHeader'}>Марк</div>
+                                            </Col>
+                                            <Col xxl={8} xl={8} lg={8} md={8}>
+                                                <div className={'myTableHeader'}>
+                                                    Он
+                                                </div>
+                                            </Col>
+                                            <Col xxl={8} xl={8} lg={8} md={8}>
+                                                <div className={'myTableHeader'}>Техникийн
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                        {
+                                            [1, 2].map((item: any, index: number) => {
+                                                return (
+                                                    <Row>
+                                                        <Col xxl={8} xl={8} lg={8} md={8}>
+                                                            <div className={'myTableContent'}>
 
-                                    {
-                                        tab === 'Хувийн мэдээлэл' ? (
-                                            <div>Техникийн байдал</div>
-                                        ):null
-                                    }
-                                    {
-                                        tab === 'Нууц үг солих' ? (
-                                            <div>Нууц үг солих</div>
-                                        ):null
-                                    }
-                                    {
-                                        tab === 'Цахим хаяг' ? (
-                                            <div>Цахим хаяг</div>
-                                        ):null
-                                    }
-
+                                                            </div>
+                                                        </Col>
+                                                        <Col xxl={8} xl={8} lg={8} md={8}>
+                                                            <div className={'myTableContent'}></div>
+                                                        </Col>
+                                                        <Col xxl={8} xl={8} lg={8} md={8}>
+                                                            <div className={'myTableContent'}>
+                                                            </div>
+                                                        </Col>
+                                                    </Row>
+                                                )
+                                            })
+                                        }
+                                    </div>
                                 </div>
                             </div>
                         </Col>

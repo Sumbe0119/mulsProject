@@ -516,6 +516,7 @@ footer {
           color: #fff;
           box-shadow: rgb(0 0 0 / 16%) 0px 0px 4px 0px;
         }
+
         .box {
           height: 50px;
           padding: 0px 20px 0px 20px;
@@ -544,9 +545,8 @@ footer {
       .bottom {
         background-color: white;
         border-radius: 10px;
-        height: 61.5vh;
         margin-top: 30px;
-        padding: 20px 20px 20px 20px;
+        padding: 20px 20px 40px 20px;
       }
     }
   }
@@ -557,3 +557,58 @@ footer {
 }
 
 /**----------------------------------------------Profile End--------------------------------------------------**/
+/**----------------------------------------------SideBar --------------------------------------------------**/
+
+
+.sideBarItem {
+  display: flex;
+  margin-left: 30px;
+
+  .icon {
+    margin-right: 20px;
+  }
+
+  .text {
+    color: #1E1E1E;
+    font-family: "Montserrat Medium";
+  }
+
+  .active {
+    color: #005332;
+    font-family: "Montserrat Medium";
+  }
+}
+
+/**----------------------------------------------SideBar End--------------------------------------------------**/
+
+/**----------------------------------------------Registration --------------------------------------------------**/
+.registration{
+  h2{
+    font-family: "Montserrat Medium";
+  }
+  .myTableHeader{
+    background-color: #005332;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Montserrat Medium';
+    border: 1px solid white;
+  }
+  .myTableContent{
+    background-color: #e1e1e1;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Montserrat Medium';
+    border: 1px solid white;
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      height: 50px;
+    }
+  }
+}
+
+/**----------------------------------------------Registration End--------------------------------------------------**/
